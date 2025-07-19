@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+html,
+body {
+	font-family: "Merriweather", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.glass {
+	/* From https://css.glass */
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+
+#superpowers .glass {
+	background: rgba(0, 35, 55, 0.6);
+	border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+code {
+	counter-increment: lineNumber;
+}
+
+code::before {
+	content: counter(lineNumber);
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+i.fas {
+	position: relative;
+	top: 0px;
+}
+
+/* it might be possible to make this work by applying an active class on scroll using IntersectionObserver */
+
+@media screen(lg) {
+	:global(.milestone.active) {
+		transform: translateX(50px);
+		transition: transform 0.2s ease-out, filter 0.2s ease-in,
+			opacity 0.2s ease-in;
+		opacity: 1;
+	}
+
+	:global(.milestone:not(.active)) {
+		transform: translateX(0);
+		transition: transform 0.5s ease-out, filter 0.5s ease-in,
+			opacity 0.5s ease-in;
+		filter: saturate(0%);
+		opacity: 0.35;
+	}
+}
