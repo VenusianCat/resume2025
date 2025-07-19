@@ -35,16 +35,15 @@ i.fas {
 }
 
 /* it might be possible to make this work by applying an active class on scroll using IntersectionObserver */
-
-@media screen(lg) {
-	:global(.milestone.active) {
+@media screen and (min-width: 1024px) {
+	.milestone.active {
 		transform: translateX(50px);
 		transition: transform 0.2s ease-out, filter 0.2s ease-in,
 			opacity 0.2s ease-in;
 		opacity: 1;
 	}
 
-	:global(.milestone:not(.active)) {
+	.milestone:not(.active) {
 		transform: translateX(0);
 		transition: transform 0.5s ease-out, filter 0.5s ease-in,
 			opacity 0.5s ease-in;
