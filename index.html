@@ -12,10 +12,10 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Richard Tammar" />
 	<meta property="og:locale" content="en_US" />
-	<link rel="apple-touch-icon" sizes="180x180" href="./static/apple-touch-icon.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="./static/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="./static/favicon-16x16.png" />
-	<link rel="manifest" href="./static/site.webmanifest" />
+	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
+	<link rel="manifest" href="./site.webmanifest" />
 	<script type="application/ld+json">
 		{
 			"@context":"http://schema.org",
@@ -30,8 +30,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap&family=Roboto+Mono:wght@100..700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="output.css">
 </head>
 
@@ -39,15 +38,15 @@
 
 	<main>
 
-		<div class="w-full flex-col justify-start overflow-hidden sm:bg-[url('./static/images/headshot-2.jpg')] sm:bg-cover sm:bg-right sm:bg-no-repeat">
+		<div class="w-full flex-col justify-start overflow-hidden sm:bg-[url('./images/headshot-2.jpg')] sm:bg-cover sm:bg-right sm:bg-no-repeat">
 			<!--author block, non-mobile-->
 			<div class="hidden px-4 py-6 text-5xl sm:block">
-				<p class="tracking-wide text-slate-100/90 pl-8">
+				<p class="tracking-wide text-notquite pl-8 pagetitle">
 					Richard Tammar
 				</p>
 			</div>
 			<!--author block, mobile-->
-			<h1 class="bg-sky-100 px-4 pt-2 text-2xl tracking-wide text-slate-900 sm:hidden">
+			<h1 class="bg-sky-100 px-4 pt-2 text-3xl font-semibold tracking-wide text-slate-800 sm:hidden pagetitle">
 				Richard Tammar
 			</h1>
 
@@ -58,8 +57,8 @@
 				</svg>
 			</div>
 
-			<p class="bg-slate-500 pb-8 pl-4 sm:pl-12 pr-3 pt-2  text-slate-100/90 sm:max-w-[30rem] sm:bg-transparent sm:text-xl md:max-w-[42rem] font-light">
-				<img src="./static/images/headshot-square.jpg" alt="headshot of Richard Tammar" class="visible float-right ml-1 mb-1 mr-2 size-24 rounded-full sm:hidden" />
+			<p class="bg-slate-500 pb-8 pl-4 sm:pl-12 pr-3 pt-2  text-notquite sm:max-w-[30rem] sm:bg-transparent sm:text-xl md:max-w-[42rem] font-light">
+				<img src="./images/headshot-square.jpg" alt="headshot of Richard Tammar" class="visible float-right ml-1 mb-1 mr-2 size-24 rounded-full sm:hidden" />
 				Veteran technologist with a knack for connecting the C-suite to the engine room. Empathetic, curious, analytical and dynamic, I work to create meaningful, sustainable change.
 			</p>
 
@@ -82,13 +81,14 @@
 				</h2>
 
 				<div class="relative mx-auto space-y-6 overflow-hidden via-90% pb-4 sm:space-y-12 sm:pt-8 sm:before:absolute sm:before:inset-0 sm:before:left-[1px] sm:before:h-full sm:before:w-[1px] sm:before:-translate-x-px sm:before:bg-gradient-to-b sm:before:from-white/25 sm:before:via-white/25 sm:before:to-transparent text-notquite">
+
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2 font-semibold  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2 font-semibold  shadow sm:flex">
 							2012 - Present
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<h2 class="text-xl font-semibold sm:text-2xl tracking-wide">
 									Senior Director of Digital Strategy
@@ -101,32 +101,31 @@
 							<div class="col-span-2 mt-4 flex flex-col gap-4 text-pretty text-sm  sm:text-base">
 								<p class="italic leading-normal tracking-normal">Travel Portland is an industry-leading Destination Marketing Organization and is the primary driver of the city's $6bn tourism sector.</p>
 								<p class="leading-relaxed tracking-normal">I lead digital strategy and product development at Travel Portland, overseeing the award-winning <a class="underline" href="https://travelportland.com">TravelPortland.com</a> and the <a class="underline" href="https://apps.apple.com/us/app/portland-near-me-now/id1661418385">Portland Near Me Now</a> mobile app. As the organization's senior technologist, I provide strategic direction and technical leadership for a multidisciplinary team of specialists.</p>
-								<div class="my-4">
-									<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs sm:text-sm leading-snug tracking-wide text-white/75">
-
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Strategic Alignment</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Team Leadership</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Systems Architecture</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Product Management</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">WordPress</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Simpleview CRM</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">JavaScript</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">PHP</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SQL</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">JIRA</li>
-
+								<div class="mt-4">
+									<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs sm:text-sm leading-snug tracking-wide text-white">
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Strategic Alignment</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Team Leadership</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Systems Architecture</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Product Management</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">WordPress</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Simpleview CRM</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">JavaScript</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">PHP</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SQL</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">JIRA</li>
 									</ul>
 								</div>
 							</div>
 						</div>
 					</div>
+
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2 font-semibold  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2 font-semibold  shadow sm:flex">
 							2008 - 2012
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<h2 class="text-xl font-semibold sm:text-2xl tracking-wide">
 									Director of Web Development
@@ -141,23 +140,22 @@
 
 								<p class="leading-relaxed tracking-normal">I directed the Web Development and Product Management verticals of the Media Division, and provided technical leadership for <i>The Public Internet Channel</i> and <i>Applications for Good</i>, with a combined traffic in excess of 1M unique visitors per month.</p>
 
-								<div class="my-4">
+								<div class="mt-4">
 									<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs sm:text-sm leading-snug tracking-wide text-white/75">
-
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Strategic Alignment</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Team Leadership</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Systems Architecture</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">WordPress</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Drupal</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">JavaScript</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">PHP</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SQL</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">JIRA</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">C#</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">HTML</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">CSS</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SVN</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">git</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Strategic Alignment</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Team Leadership</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Systems Architecture</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">WordPress</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Drupal</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">JavaScript</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">PHP</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SQL</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">JIRA</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">C#</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">HTML</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">CSS</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SVN</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">git</li>
 									</ul>
 								</div>
 							</div>
@@ -165,11 +163,11 @@
 					</div>
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2 font-semibold  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2 font-semibold  shadow sm:flex">
 							2004 - 2008
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<h2 class="text-xl font-semibold sm:text-2xl tracking-wide">
 									Web Manager
@@ -184,19 +182,19 @@
 
 								<p class="leading-relaxed tracking-normal">I directed the corporation's global web presence, intranet, extranet and email marketing programs. My team reengineered the corporate web site, enhancing usability, lead generation and organic search rank while reducing maintenance overheads and marketing lead times.</p>
 
-								<div class="my-4">
+								<div class="mt-4">
 									<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs sm:text-sm leading-snug tracking-wide text-white/75">
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Content Management Systems</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Platform Architecture</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Team Leadership</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SEO</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Email Marketing</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SQL</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">PHP</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">HTML</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Coldfusion</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">HTML</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">CSS</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Content Management Systems</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Platform Architecture</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Team Leadership</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SEO</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Email Marketing</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SQL</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">PHP</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">HTML</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Coldfusion</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">HTML</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">CSS</li>
 									</ul>
 								</div>
 							</div>
@@ -204,11 +202,11 @@
 					</div>
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2 font-semibold  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2 font-semibold  shadow sm:flex">
 							1999 - 2004
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<h2 class="text-xl font-semibold sm:text-2xl tracking-wide">
 									Web Manager
@@ -223,18 +221,17 @@
 
 								<p class="leading-relaxed tracking-normal">I was responsible for the university's web presence and managed the core web team. We were one of the very first universities to develop and implement a campus-wide CMS, enabling non-technical staff in over 100 departments to maintain an independent website within a unified UX. This integrated with HR and curriculum systems to ensure currency of staff data, program specifications <i>et al</i>. Through so doing we increased usability, reduced technical overheads and cut support costs.</p>
 
-								<div class="my-4">
+								<div class="mt-4">
 									<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs sm:text-sm leading-snug tracking-wide text-white/75">
 
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Team Leadership</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Platform Architecture</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Content Management Systems</li>
-
-										<li class="rounded-full bg-black/20 px-2 py-0.5">UX</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">SQL</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">Coldfusion</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">PHP</li>
-										<li class="rounded-full bg-black/20 px-2 py-0.5">HTML</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Team Leadership</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Platform Architecture</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Content Management Systems</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">UX</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">SQL</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">Coldfusion</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">PHP</li>
+										<li class="rounded-full bg-black/30 px-2 py-0.5">HTML</li>
 
 									</ul>
 								</div>
@@ -246,13 +243,15 @@
 			</div>
 		</div>
 
-		<div class="bg-[#e3fafc] py-4" id="superpowers">
+		<div class="relative z-50 h-4 w-full bg-highway"></div>
+
+		<div class="bg-[#191919] py-4" id="superpowers">
 			<div class="relative z-40 mx-auto max-w-7xl px-4 pb-6 pt-6">
-				<h2 class="relative z-10 mb-6 text-2xl leading-none tracking-wide text-highway font-bold">
+				<h2 class="relative z-10 mb-6 text-2xl leading-none tracking-wide text-white/90 font-normal">
 					&nbsp;KEY SKILLS
 				</h2>
 				<div class="grid gap-4 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3">
 							<code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Bridging Domains <i class="fas fa-code-branch white" aria-hidden="true"></i> &nbsp;</code>
 							<code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">I work at the intersection of</code>
@@ -260,27 +259,27 @@
 							<code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">and speak both dialects.</code>
 						</div>
 					</div>
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3"><code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Building Teams&nbsp; <i class="fas fa-link white" aria-hidden="true"></i> &nbsp;</code> <code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Warm, approachable and egalitarian,</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">I capitalize on individual talent</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">and foster excellent team dynamics.</code></div>
 					</div>
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3"><code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Getting Things Done&nbsp; <i class="fas fa-check-square white" aria-hidden="true"></i> &nbsp;</code> <code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">I'm deeply pragmatic and have a</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">bias for action.</code></div>
 					</div>
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3"><code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Conveying Ideas&nbsp; <i class="fas fa-lightbulb white" aria-hidden="true"></i> &nbsp;</code> <code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">A trained teacher, my presentations</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">are "Clear, smart, digestible</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">and highly entertaining."</code></div>
 					</div>
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3"><code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Designing Systems&nbsp; <i class="fas fa-cogs white" aria-hidden="true"></i> &nbsp;</code> <code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Curious and analytical, I try to</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">understand how things work - and</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">then improve upon them.</code></div>
 					</div>
-					<div class="bg-confidence relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
+					<div class="bg-black relative z-50 rounded-lg pl-4 shadow-lg backdrop-filter backdrop-blur-sm pt-1 pb-4">
 						<div class="counter-reset-line -ml-2 pt-3"><code class="text-white sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Coding&nbsp; <i class="fas fa-code white" aria-hidden="true"></i> &nbsp;</code> <code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">Full-stack web develpoment,</code><code class="text-slate-300 tracking-tighter sm:text-base text-sm relative block overflow-hidden text-ellipsis whitespace-nowrap break-words font-['Roboto_Mono'] before:mr-3 before:inline-block before:w-5 before:border-r-2 before:border-r-gray-300/10 before:pr-1 before:text-right before:text-base before:text-gray-300/50">from SQL to Svelte.</code></div>
 					</div>
 				</div>
 			</div>
-
-
 		</div>
 
+
+		<div class="relative z-50 h-4 w-full bg-confidence"></div>
 
 		<div class="bg-highway pt-12 pb-8">
 			<div class="relative mx-auto max-w-7xl px-4 md:px-6">
@@ -293,11 +292,11 @@
 				<div class="relative mx-auto space-y-6 overflow-hidden via-90% pb-4 sm:space-y-8 sm:pt-8 sm:before:absolute sm:before:inset-0 sm:before:left-[1px] sm:before:h-full sm:before:w-[1px] sm:before:-translate-x-px sm:before:bg-gradient-to-b sm:before:from-white/25 sm:before:via-white/25 sm:before:to-transparent">
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2  shadow sm:flex">
 							1990 - 1993
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<div class="flex justify-between gap-4">
 									<div>
@@ -309,30 +308,30 @@
 											<span class="visible sm:invisible">({to})</span>
 										</h3>
 									</div>
-									<img src="./static/images/lse.gif" alt="Logo for the London School of Economics and Political Science" class="size-16 rounded-lg" />
+									<img src="./images/lse.gif" alt="Logo for the London School of Economics and Political Science" class="size-16 rounded-lg" />
 								</div>
 							</div>
-							<div class="">
-								<ul class="mt-6 flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white/75 sm:text-sm">
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Economics</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Psychology</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Statistics</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Analysis</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Critical Thinking</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Research Design</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Empathy</li>
-								</ul>
-							</div>
+
+							<ul class="flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white sm:text-sm">
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Economics</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Psychology</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Statistics</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Analysis</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Critical Thinking</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Research Design</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Empathy</li>
+							</ul>
+
 						</div>
 					</div>
 
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2  shadow sm:flex">
 							1995 - 1997
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 
 								<div class="flex justify-between gap-4">
@@ -348,33 +347,33 @@
 											<span class="visible sm:invisible">({to})</span>
 										</h3>
 									</div>
-									<img src="./static/images/university-of-sussex.gif" alt="Logo for the University of Sussex" class="size-16 rounded-lg" />
+									<img src="./images/university-of-sussex.gif" alt="Logo for the University of Sussex" class="size-16 rounded-lg" />
 								</div>
 
 							</div>
-							<div class="">
-								<ul class="mt-6 flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white/75 sm:text-sm">
 
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Critical Thinking and Analysis</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Intersectionality</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Empathy and Cultural Sensitivity</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Research</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">History</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Literature</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Sociology</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Law</li>
-								</ul>
-							</div>
+							<ul class="mt-6 flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white sm:text-sm">
+
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Critical Thinking and Analysis</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Intersectionality</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Empathy and Cultural Sensitivity</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Research</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">History</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Literature</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Sociology</li>
+								<li class="rounded-full bg-black/30 px-2 py-0.5">Law</li>
+							</ul>
+
 						</div>
 					</div>
 
 					<div class="milestone relative mx-auto flex max-w-3xl items-start justify-center sm:pl-8 sm:before:absolute sm:before:inset-0 sm:before:-left-72 sm:before:h-[1px] sm:before:w-1/2 sm:before:bg-gradient-to-r sm:before:from-white/25 sm:before:to-transparent text-notquite">
 						<!-- Date -->
-						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/20 p-2  shadow sm:flex">
+						<time class="glass text-normal hidden h-20 w-48 shrink-0 items-center justify-center rounded-bl border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/10 p-2 shadow sm:flex">
 							1998 - 1999
 						</time>
 						<!-- Card -->
-						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-white/10 p-4 shadow sm:rounded-tl-none sm:p-6">
+						<div class="glass w-full rounded-lg rounded-b-lg rounded-r-lg border border-b-black/10 border-l-white/10 border-r-black/10 border-t-white/10 bg-black/20 p-4 shadow sm:rounded-tl-none sm:p-6">
 							<div>
 								<h2 class="mb-2 text-lg font-semibold tracking-wide sm:text-xl">
 									Postgraduate Certificate in Education
@@ -389,16 +388,16 @@
 								<p class="leading-normal tracking-normal">Confers Qualified Teacher Status (QTS) in the UK, equivalent to a Professional Educator License.</p>
 							</div>
 							<div class="">
-								<ul class="mt-6 flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white/75 sm:text-sm">
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Conveying Information</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Time Management</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Organisation</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Problem Solving</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Adaptability</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Resilience</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Assessment and Evaluation</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Instructional Design</li>
-									<li class="rounded-full bg-black/20 px-2 py-0.5">Leadership</li>
+								<ul class="mt-6 flex flex-wrap gap-1 font-['Roboto_Mono'] text-xs leading-snug tracking-wide text-white sm:text-sm">
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Conveying Information</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Time Management</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Organisation</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Problem Solving</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Adaptability</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Resilience</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Assessment and Evaluation</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Instructional Design</li>
+									<li class="rounded-full bg-black/30 px-2 py-0.5">Leadership</li>
 								</ul>
 							</div>
 						</div>
