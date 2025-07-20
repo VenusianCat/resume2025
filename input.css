@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+	--color-confidence: #1f4e70;
+	--color-deeporange: #e55c00;
+	--color-dmoauthority: #ffae0b;
+	--color-notquite: #fbfffe;
+	--color-sonoma: #a3004e;
+	--color-highway: #45494d;
+}
+
 html,
 body {
 	font-family: "Merriweather", serif;
@@ -12,11 +21,6 @@ body {
 	/* From https://css.glass */
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
-}
-
-#superpowers .glass {
-	background: rgba(0, 35, 55, 0.6);
-	border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 code {
